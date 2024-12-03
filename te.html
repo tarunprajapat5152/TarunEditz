@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="te.css">
+    <link rel="icon" href="favicon.jpeg">
+    <script src="te.js" defer></script>
+</head>
+<body>
+    <div class="container disable">
+        <div id="title">
+            <label>Tarun Editz</label>
+        </div>
+        <div class="wrapper">
+            <label class="filter">Filters</label>
+            <div class="options">
+                <button id="bt1" class="editBtn bt">Brightness</button>
+                <button id="bt2" class="editBtn bt">Saturation</button>
+                <button id="bt3" class="editBtn bt">Inversion</button>
+                <button id="bt4" class="editBtn bt">Grayscale</button>
+            </div>
+           <div class="track">
+            <label for="slider" class="innerText text">Brightness</label>
+            <label class="innerText value">100%</label>
+           </div>
+            <input type="range" min="0" max="200" value="0" id="slider">
+            <label class="title">Rotate & Flip</label>
+            <div class="icon">
+                <button><i id="rotateRight" class='bx bx-rotate-right rotation'></i></button>
+                <button><i id="rotateLeft" class='bx bx-rotate-left rotation' ></i></button>
+                <button><i id="horizontal" class="bx bx-reflect-vertical rotation"></i></button>
+                <button><i id="vertical" class="bx bx-reflect-horizontal rotation"></i></button>
+            </div>
+        </div>
+        <div class="select">
+            <button class="btn reset">RESET FILTER</button>
+            <div class="twoIn1">
+                <input type="file" id="upload" accept="image/*" hidden>
+                <button class="btn choose">CHOOSE IMAGE</button>
+                <button class="btn save">SAVE IMAGE</button>
+            </div>
+        </div>
+        <div class="preview-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png?20200912122019">
+        </div>
+    </div>
+</body>
+</html>
